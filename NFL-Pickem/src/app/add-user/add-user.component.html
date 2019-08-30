@@ -1,10 +1,52 @@
 <form [formGroup]="adduserForm" (submit)="save()">
   <h1 mat-dialog-title>Add User</h1>
   <mat-dialog-content>
-    <mat-form-field>
-      <input matInput formControlName="username" placeholder="Enter username" />
-      <mat-error>Invalid username</mat-error>
-    </mat-form-field>
+    <div class="dialogcontent">
+      <mat-form-field>
+        <input
+          matInput
+          formControlName="username"
+          placeholder="Enter username"
+        />
+        <mat-error>Invalid username</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          formControlName="password"
+          placeholder="Enter password"
+          [type]="hide ? 'password' : 'text'"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-error>Invalid password</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          formControlName="confpassword"
+          placeholder="Confirm password"
+          [type]="hide ? 'password' : 'text'"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-error>Invalid password</mat-error>
+      </mat-form-field>
+    </div>
   </mat-dialog-content>
   <mat-dialog-actions>
     <button

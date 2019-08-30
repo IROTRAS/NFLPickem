@@ -116,7 +116,8 @@ apiRouter.route("/user").post((req, res) => {
     username: req.body.username.toLowerCase(),
     userweeks: constants.TEMPLATE,
     weekscore: 0,
-    totalscore: 0
+    totalscore: 0,
+    password: req.body.password
   });
   saveUser.save((err, result) => {
     /* If we encounter an error log this to the console*/
@@ -167,7 +168,7 @@ apiRouter.route("/user/delete").post((req, res) => {
     var username = req.body.username;
     username = username.toLowerCase();
   }
-  user.deleteOne({ username: username }, (err, result) => {
+  user.deleteOne(req.body.username, (err, result) => {
     /* If we encounter an error log this to the console*/
     if (err) {
       console.dir(err);
@@ -210,16 +211,9 @@ apiRouter.route("/user/update").post((req, res) => {
   );
 });
 
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* API for schedule */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 /////////////////////////////////////////
 /* GET for all schedule records*/
@@ -429,22 +423,21 @@ apiRouter.route("/schedule/addweek").post((req, res) => {
   // var setupSeason = new schedule(req.body);
   schedule.updateOne(
     { week: req.body.week },
-    { $set: { games: req.body.games, byteams: req.body.byteams } },
+    { $set: { games: req.body.games, byeteams: req.body.byeteams } },
     (err, result) => {
-    /* If we encounter an error log this to the console*/
-    if (err) {
-      console.dir(err);
-      res.sendStatus(500);
-    }
-    if (result) {
-      /* Document was successfully created so send a JSON encoded
+      /* If we encounter an error log this to the console*/
+      if (err) {
+        console.dir(err);
+        res.sendStatus(500);
+      }
+      if (result) {
+        /* Document was successfully created so send a JSON encoded
           success message back with the Router Response object */
-      res.json({ message: "successfully added week to Season" });
+        res.json({ message: "successfully added week to Season" });
+      }
     }
-  });
+  );
 });
-
-
 
 /* Mount the specified Middleware function based on matching path */
 app.use("/", apiRouter);

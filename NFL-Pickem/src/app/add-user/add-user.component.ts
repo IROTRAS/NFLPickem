@@ -25,6 +25,7 @@ import { map } from 'rxjs/operators';
 })
 export class AddUserComponent implements OnInit {
   adduserForm: FormGroup;
+  hide = true;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -34,7 +35,9 @@ export class AddUserComponent implements OnInit {
   ) {}
   ngOnInit() {
     this.adduserForm = this.formBuilder.group({
-      username: ['', Validators.required, this.validateUsername.bind(this)]
+      username: ['', Validators.required, this.validateUsername.bind(this)],
+      password: ['', Validators.required, this.validateUsername.bind(this)],
+      confpassword: ['', Validators.required, this.validateUsername.bind(this)]
     });
   }
 

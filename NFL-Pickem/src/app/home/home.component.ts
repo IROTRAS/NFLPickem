@@ -10,6 +10,7 @@ import { FormGroup, FormBuilder, FormsModule } from '@angular/forms';
 
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material';
 import { CommishLoginComponent } from '../commish-login/commish-login.component';
+import { AddUserComponent } from '../add-user/add-user.component';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +22,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   removeUserDialogRef: MatDialogRef<RemoveUserComponent>;
   commishLoginDialogRef: MatDialogRef<CommishLoginComponent>;
+  addUserDialogRef: MatDialogRef<AddUserComponent>;
   subscriptions: Subscription = new Subscription();
 
   constructor(
@@ -44,6 +46,15 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   updateResults() {
     this.router.navigate(['results']);
+  }
+
+  addUserDialog() {
+    this.addUserDialogRef = this.dialog.open(AddUserComponent, {
+      hasBackdrop: true,
+      autoFocus: true,
+      disableClose: true,
+      data: {}
+    });
   }
 
   commishLoginDialog() {

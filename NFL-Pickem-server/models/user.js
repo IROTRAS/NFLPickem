@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -13,11 +13,12 @@ let UserSchema = new Schema(
       }
     ],
     weekscore: { type: Number },
-    totalscore: { type: Number }
+    totalscore: { type: Number },
+    password: { type: String }
   },
-  { collection: 'user' }
+  { collection: "user" }
 );
 
-const user = mongoose.model('user', UserSchema);
+const user = mongoose.model("user", UserSchema);
 
 export default user;

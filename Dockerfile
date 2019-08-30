@@ -29,14 +29,13 @@ RUN npm run build
 FROM node:8
 
 # Create new directory to place app and public for the client dist
-RUN mkdir -p /usr/src/app
 RUN mkdir -p /usr/src/app/public
 
 # Change directory so our commands run inside the newly created directory
 WORKDIR /usr/src/app
 
 # Copy dependecy definitions
-COPY . /usr/src/app
+COPY NFL-Pickem-server /usr/src/app
 
 # Install dependecies
 RUN npm install
