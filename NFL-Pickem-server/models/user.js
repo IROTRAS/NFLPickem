@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
@@ -15,9 +15,9 @@ let UserSchema = new Schema(
     weekscore: { type: Number },
     totalscore: { type: Number }
   },
-  { collection: "user" }
+  { collection: 'user' }
 );
 
-const user = mongoose.model("user", UserSchema);
+const user = mongoose.model('user', UserSchema);
 
-module.exports = user;
+export default user;
