@@ -1,0 +1,36 @@
+<div class="body">
+  <div class="flex-body">
+    <div
+      class="flex-row"
+      *ngFor="let user of userweekpicks; let i = index"
+      (click)="userPicks(user)"
+    >
+      {{ user.username | uppercase }} <br class="sub-header" />
+      <div class="col-one">
+        <div class="sub-head-title">Week</div>
+        <div class="sub-head-title">Score:</div>
+        <div class="sub-head-value">{{ user.weekscore }}</div>
+      </div>
+      <div class="col-two">
+        <div class="sub-head-title">Total</div>
+        <div class="sub-head-title">Score:</div>
+        <div class="sub-head-value">{{ userTotalScores[i] }}</div>
+      </div>
+      <div class="flex-col" *ngFor="let pick of user.userweek.picks">
+        <div>
+          <img
+            src="./assets/images/{{ pick }}.png"
+            alt="{{ picks }}"
+            style="height:49px;width:63px"
+          />
+        </div>
+      </div>
+    </div>
+    <div *ngIf="(commishLoggedIn)" class="flex-row adduser" (click)="addUserDialog()">
+      <div class="flex-row text">ADD</div>
+      <div class="flex-row text">+</div>
+    </div>
+  </div>
+</div>
+
+<!-- *ngFor="let pick of userweekpicks[0].pickweeks.picks" ! -->

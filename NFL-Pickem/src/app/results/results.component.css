@@ -1,0 +1,133 @@
+h1 {
+  text-align: center;
+}
+
+.picks-main {
+  text-align: center;
+}
+
+.col-one {
+  height: 100%;
+  width: 10%;
+  border-collapse: collapse;
+  /*background-color: rebeccapurple; */
+  float: left;
+  text-align: center
+}
+
+.col-two {
+  height: 100%;
+  width: 80%;
+  border-collapse: collapse;
+  /*background-color: royalblue;*/
+  float: left;
+}
+
+.col-three {
+  height: 100%;
+  width: 10%;
+  border-collapse: collapse;
+  /*background-color: royalblue;*/
+  float: left;
+  text-align: center;
+}
+
+.flex-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.away-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: left;
+}
+
+.home-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: left;
+}
+
+.away-chosen {
+  height: 49px;
+  width: 63px;
+  align-self: flex-start;
+}
+
+.away-notchosen {
+  height: 49px;
+  width: 63px;
+  align-self: flex-end;
+  filter: opacity(30%);
+}
+
+.home-chosen {
+  height: 49px;
+  width: 63px;
+  transform: scaleX(-1);
+  align-self: flex-end;
+}
+
+.home-notchosen {
+  height: 49px;
+  width: 63px;
+  transform: scaleX(-1);
+  filter: opacity(30%);
+}
+
+.flex-weeks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.flex-games {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.weeks {
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+
+.weekfocused {
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 0.5em;
+  background: #3399ff;
+  color: white;
+}
+
+.weekgames {
+  padding: 0.3em;
+}
+
+td {
+  text-align: center;
+}
+
+.buttoncenter {
+  text-align: center;
+}

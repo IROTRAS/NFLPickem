@@ -1,0 +1,29 @@
+{
+  "name": "nfl-pickem-server",
+  "version": "1.0.0",
+  "description": "NFL-Pickem App backed server",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --exec babel-node --presets babel-preset-env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tbd"
+  },
+  "author": "Matt Sartori",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.9"
+  }
+}

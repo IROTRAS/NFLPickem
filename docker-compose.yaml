@@ -1,0 +1,22 @@
+version: "3"
+
+# Define the services/containers to be run
+services:
+  # client: # name of the client or app service
+  #   build: NFL-Pickem
+  #   ports:
+  #     - '4200:4200' # specify port forwarding
+  #   volumes:
+  #     - ./NFL-Pickem:/app # allows changes to client app to be reflected in the container
+
+  server: # name of the server service
+    build: NFL-Pickem-server
+    ports:
+      - "3200:3200" # specify port forwarding
+    links:
+      - database # link this server service to the database service
+
+  database: # name of the database service
+    image: mongo
+    ports:
+      - "27017:27017" # specify port forwarding

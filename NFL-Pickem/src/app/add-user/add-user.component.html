@@ -1,0 +1,19 @@
+<form [formGroup]="adduserForm" (submit)="save()">
+  <h1 mat-dialog-title>Add User</h1>
+  <mat-dialog-content>
+    <mat-form-field>
+      <input matInput formControlName="username" placeholder="Enter username" />
+      <mat-error>Invalid username</mat-error>
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button
+      mat-button
+      type="submit"
+      [disabled]="adduserForm.invalid || adduserForm.pristine"
+    >
+      Save
+    </button>
+    <button mat-button type="close" mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</form>

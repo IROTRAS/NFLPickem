@@ -1,0 +1,71 @@
+<header>
+  <body>
+    <div class="flex-weeks">
+      <table class="flex-table">
+        <tr>
+          <h1>UPDATE WEEK</h1>
+        </tr>
+        <tr>
+          <button
+            mat-button
+            class="weeks"
+            (click)="weekSelected(week)"
+            *ngFor="let week of weeks"
+            [ngClass]="week === selectedweek ? 'weekfocused' : ''"
+          >
+            {{ week }}
+          </button>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <button mat-button-raised (click)="addGameDialog()" *ngIf="selectedweek">
+        ADD GAME
+      </button>
+      <button mat-button-raised (click)="addByeTeamsDialog()" *ngIf="selectedweek">
+        ADD BYE TEAMS
+      </button>
+      <button mat-button-raised (click)="addWeekFromFileDialog()" *ngIf="selectedweek">
+        ADD WEEK FILE
+      </button>
+    </div>
+    <div class="flex-games">
+      <table class="flex-table">
+        <tr>
+          <th>Date</th>
+          <th>Start</th>
+          <th>Away</th>
+          <th>Home</th>
+        </tr>
+        <tr *ngFor="let game of weekGames">
+          <td>{{ game.date | date: 'MM/dd/yyyy' }}</td>
+          <td>{{ game.start }} (ET)</td>
+          <td>
+            <img
+              src="./assets/images/{{game.away}}.png"
+              alt="awayteam"
+              style="height:49px;width:63px"
+            />
+          </td>
+          <td>
+            <img
+              src="./assets/images/{{game.home}}.png"
+              alt="hometeam"
+              style="height:49px;width:63px;transform:scaleX(-1)"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <table>
+      <tr>
+        <th colspan="2">BYE TEAMS</th>
+      </tr>
+      <tr>
+        <td *ngFor="let team of byeteams">
+          <img src="./assets/images/{{team}}.png" alt="{{team}}" style="height:35px;width:45px" >
+        </td>
+      </tr>
+  </table>
+  </body>
+</header>

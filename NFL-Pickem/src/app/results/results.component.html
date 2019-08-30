@@ -1,0 +1,63 @@
+<header>
+  <body>
+    <div class="col-one">
+        <button mat-raised-button (click)="back()">BACK</button>
+    </div>
+    <div class="col-two">
+      <table class="flex-table">
+        <tr>
+          <h1>ADD WEEK RESULTS</h1>
+        </tr>
+        <tr>
+          <button
+            mat-button
+            class="weeks"
+            (click)="weekSelected(week)"
+            *ngFor="let week of weeks"
+            [ngClass]="week === selectedweek ? 'weekfocused' : ''"
+          >
+            {{ week }}
+          </button>
+        </tr>
+        <div class="picks-main">
+          <div class="flex-body">
+            <div
+              class="flex-col"
+              *ngFor="let game of weekGames; let i = index"
+            >
+              <div class="flex-row"> 
+                <div class="away-col">
+                  <img
+                    src="./assets/images/{{game.away}}.png"
+                    alt="{{game.away}}"
+                    (click)="picked(i, game.away)"
+                    [ngClass]="{
+                      'away-chosen': results[i] === game.away,
+                      'away-notchosen': results[i] !== game.away
+                    }"
+                  />
+                </div>
+                <div class="home-col">
+                  <img
+                    src="./assets/images/{{game.home}}.png"
+                    alt="{{game.home}}"
+                    (click)="picked(i, game.home)"
+                    [ngClass]="{
+                      'home-chosen': results[i] === game.home,
+                      'home-notchosen': results[i] !== game.home
+                    }"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button mat-raised-button (click)="closeWeek()">Close Week</button>
+        </div> 
+      </table>
+    </div>
+    <div class="col-three">
+      <button mat-raised-button class="buttoncenter" (click)="saveResults()">SAVE</button>
+    </div>
+  </body>
+</header>
+

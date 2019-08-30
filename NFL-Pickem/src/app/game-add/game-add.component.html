@@ -1,0 +1,43 @@
+<form [formGroup]="gameAddForm" (submit)="saveGame()">
+    <h1 mat-dialog-title>Add Game to Week {{selectedweek.selectedweek}}</h1>
+    <mat-dialog-content class="form-container">
+      <mat-form-field>
+        <input matInput formControlName="date" [matDatepicker]="picker" placeholder="Choose game date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error>Invalid date</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="start" placeholder="Enter time in ET" />
+        <mat-error>Invalid time</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput formControlName="away" placeholder="Select away team" [matAutocomplete]="awayauto"/>
+        <mat-autocomplete autoActiveFirstOption #awayauto="matAutocomplete">
+          <mat-option *ngFor="let away of awayfilteredOptions | async" [value]="away">
+            {{away}}
+          </mat-option>
+        </mat-autocomplete>
+        <mat-error>Invalid away team</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input type="text" matInput formControlName="home" placeholder="Select home team" [matAutocomplete]="homeauto"/>
+        <mat-autocomplete autoActiveFirstOption #homeauto="matAutocomplete">
+          <mat-option *ngFor="let home of homefilteredOptions | async" [value]="home">
+            {{home}}
+          </mat-option>
+        </mat-autocomplete>
+        <mat-error>Invalid home team</mat-error>
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button
+        mat-button
+        type="submit"
+        [disabled]="gameAddForm.invalid || gameAddForm.pristine"
+      >
+        Save
+      </button>
+      <button mat-button type="close" mat-dialog-close>Cancel</button>
+    </mat-dialog-actions>
+  </form>

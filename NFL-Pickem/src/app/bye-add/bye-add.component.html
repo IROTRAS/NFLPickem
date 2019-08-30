@@ -1,0 +1,24 @@
+<form [formGroup]="byeAddForm" (submit)="saveByeTeam()">
+    <h1 mat-dialog-title>Add Bye Team to Week {{selectedweek.selectedweek}}</h1>
+    <mat-dialog-content class="form-container">
+      <mat-form-field>
+        <input type="text" matInput formControlName="team" placeholder="Select team" [matAutocomplete]="teamauto"/>
+        <mat-autocomplete autoActiveFirstOption #teamauto="matAutocomplete">
+          <mat-option *ngFor="let team of teamfilteredOptions | async" [value]="team">
+            {{team}}
+          </mat-option>
+        </mat-autocomplete>
+        <mat-error>Invalid team</mat-error>
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button
+        mat-button
+        type="submit"
+        [disabled]="byeAddForm.invalid || byeAddForm.pristine"
+      >
+        Save
+      </button>
+      <button mat-button type="close" mat-dialog-close>Cancel</button>
+    </mat-dialog-actions>
+  </form>

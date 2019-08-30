@@ -1,0 +1,1763 @@
+
+{
+    "_id" : ObjectId("5c27af48623c47741703c43f"),
+    "week" : "1",
+    "games" : [
+        {
+            "date" : ISODate("2018-09-06T05:25:20.201Z"),
+            "start" : "20:20",
+            "away" : "falcons",
+            "home" : "eagles"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "13:00",
+            "away" : "bills",
+            "home" : "ravens"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "13:00",
+            "away" : "jaguars",
+            "home" : "giants"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "13:00",
+            "away" : "bucs",
+            "home" : "saints"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "13:00",
+            "away" : "texans",
+            "home" : "patriots"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "13:00",
+            "away" : "49ers",
+            "home" : "vikings"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "13:00",
+            "away" : "texans",
+            "home" : "dolphins"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "13:00",
+            "away" : "bengals",
+            "home" : "colts"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "13:00",
+            "away" : "steelers",
+            "home" : "browns"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "16:05",
+            "away" : "chiefs",
+            "home" : "chargers"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "16:05",
+            "away" : "seahawks",
+            "home" : "broncos"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "16:25",
+            "away" : "cowboys",
+            "home" : "panthers"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "20:20",
+            "away" : "redskins",
+            "home" : "cardinals"
+        },
+        {
+            "date" : ISODate("2018-09-09"),
+            "start" : "20:15",
+            "away" : "bears",
+            "home" : "packers"
+        },
+        {
+            "date" : ISODate("2018-09-10"),
+            "start" : "16:15",
+            "away" : "jets",
+            "home" : "lions"
+        },
+        {
+            "date" : ISODate("2018-09-10"),
+            "start" : "20:15",
+            "away" : "rams",
+            "home" : "raiders"
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c50b"),
+    "week" : "2",
+    "games" : [
+        {
+            "date" : ISODate("2018-09-13"),
+            "start" : "20:20",
+            "away" : "ravens",
+            "home" : "bengals"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "panthers",
+            "home" : "falcons"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "colts",
+            "home" : "redskins"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "texans",
+            "home" : "titans"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "eagles",
+            "home" : "bucs"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "chiefs",
+            "home" : "steelers"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "dolphins",
+            "home" : "jets"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "chargers",
+            "home" : "bills"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "vikings",
+            "home" : "packers"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "13:00",
+            "away" : "browns",
+            "home" : "saints"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "16:05",
+            "away" : "lions",
+            "home" : "49ers"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "16:05",
+            "away" : "cardinals",
+            "home" : "rams"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "16:25",
+            "away" : "patriots",
+            "home" : "jaguars"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "16:25",
+            "away" : "raiders",
+            "home" : "broncos"
+        },
+        {
+            "date" : ISODate("2018-09-16"),
+            "start" : "20:20",
+            "away" : "giants",
+            "home" : "cowboys"
+        },
+        {
+            "date" : ISODate("2018-09-17"),
+            "start" : "20:15",
+            "away" : "seahawks",
+            "home" : "bears"
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c50d"),
+    "week" : "3",
+    "games" : [
+        {
+            "date" : ISODate("2018-09-20"),
+            "start" : "20:20",
+            "away" : "jets",
+            "home" : "browns"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "13:00",
+            "away" : "saints",
+            "home" : "falcons"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "13:00",
+            "away" : "packers",
+            "home" : "redskins"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "13:00",
+            "away" : "colts",
+            "home" : "eagles"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "13:00",
+            "away" : "bills",
+            "home" : "vikings"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "13:00",
+            "away" : "raiders",
+            "home" : "dolphins"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "13:00",
+            "away" : "broncos",
+            "home" : "ravens"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "13:00",
+            "away" : "bengals",
+            "home" : "panthers"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "13:00",
+            "away" : "giants",
+            "home" : "texans"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "16:05",
+            "away" : "titans",
+            "home" : "jaguars"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "16:05",
+            "away" : "49ers",
+            "home" : "chiefs"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "16:15",
+            "away" : "chargers",
+            "home" : "rams"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "16:15",
+            "away" : "cowboys",
+            "home" : "seahawks"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "16:15",
+            "away" : "bears",
+            "home" : "cardinals"
+        },
+        {
+            "date" : ISODate("2018-09-23"),
+            "start" : "20:15",
+            "away" : "patriots",
+            "home" : "lions"
+        },
+        {
+            "date" : ISODate("2018-09-24"),
+            "start" : "20:20",
+            "away" : "steelers",
+            "home" : "bucs"
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c50f"),
+    "week" : "4",
+    "games" : [
+        {
+            "date" : ISODate("2018-09-27"),
+            "start" : "20:20",
+            "away" : "vikings",
+            "home" : "rams"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "13:00",
+            "away" : "jets",
+            "home" : "jaguars"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "13:00",
+            "away" : "dolphins",
+            "home" : "patriots"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "13:00",
+            "away" : "eagles",
+            "home" : "titans"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "13:00",
+            "away" : "texans",
+            "home" : "colts"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "13:00",
+            "away" : "bills",
+            "home" : "packers"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "13:00",
+            "away" : "lions",
+            "home" : "cowboys"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "13:00",
+            "away" : "bucs",
+            "home" : "bears"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "13:00",
+            "away" : "bengals",
+            "home" : "falcons"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "16:05",
+            "away" : "seahawks",
+            "home" : "cardinals"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "16:05",
+            "away" : "browns",
+            "home" : "raiders"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "16:25",
+            "away" : "saints",
+            "home" : "giants"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "16:25",
+            "away" : "49ers",
+            "home" : "chargers"
+        },
+        {
+            "date" : ISODate("2018-09-30"),
+            "start" : "20:20",
+            "away" : "ravens",
+            "home" : "steelers"
+        },
+        {
+            "date" : ISODate("2018-10-01"),
+            "start" : "20:15",
+            "away" : "chiefs",
+            "home" : "broncos"
+        }
+    ],
+    "byeteams" : [
+        "panthers",
+        "redskins"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c511"),
+    "week" : "5",
+    "games" : [
+        {
+            "date" : ISODate("2018-10-04"),
+            "start" : "20:20",
+            "away" : "colts",
+            "home" : "patriots"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "13:00",
+            "away" : "titans",
+            "home" : "bills"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "13:00",
+            "away" : "falcons",
+            "home" : "steelers"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "13:00",
+            "away" : "broncos",
+            "home" : "jets"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "13:00",
+            "away" : "jaguars",
+            "home" : "chiefs"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "13:00",
+            "away" : "packers",
+            "home" : "lions"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "13:00",
+            "away" : "ravens",
+            "home" : "browns"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "13:00",
+            "away" : "giants",
+            "home" : "panthers"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "13:00",
+            "away" : "dolphins",
+            "home" : "bengals"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "16:05",
+            "away" : "raiders",
+            "home" : "chargers"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "16:05",
+            "away" : "cardinals",
+            "home" : "49ers"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "16:25",
+            "away" : "vikings",
+            "home" : "eagles"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "16:25",
+            "away" : "rams",
+            "home" : "seahawks"
+        },
+        {
+            "date" : ISODate("2018-10-07"),
+            "start" : "20:20",
+            "away" : "cowboys",
+            "home" : "texans"
+        },
+        {
+            "date" : ISODate("2018-10-08"),
+            "start" : "20:15",
+            "away" : "redskins",
+            "home" : "saints"
+        }
+    ],
+    "byeteams" : [
+        "bears",
+        "bucs"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c513"),
+    "week" : "6",
+    "games" : [
+        {
+            "date" : ISODate("2018-10-11"),
+            "start" : "20:20",
+            "away" : "eagles",
+            "home" : "giants"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "13:00",
+            "away" : "bucs",
+            "home" : "falcons"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "13:00",
+            "away" : "panthers",
+            "home" : "redskins"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "13:00",
+            "away" : "seahawks",
+            "home" : "raiders"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "13:00",
+            "away" : "colts",
+            "home" : "jets"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "13:00",
+            "away" : "cardinals",
+            "home" : "vikings"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "13:00",
+            "away" : "steelers",
+            "home" : "bengals"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "13:00",
+            "away" : "chargers",
+            "home" : "browns"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "13:00",
+            "away" : "bills",
+            "home" : "texans"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "16:05",
+            "away" : "bears",
+            "home" : "dolphins"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "16:05",
+            "away" : "rams",
+            "home" : "broncos"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "16:25",
+            "away" : "ravens",
+            "home" : "titans"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "16:25",
+            "away" : "jaguars",
+            "home" : "cowboys"
+        },
+        {
+            "date" : ISODate("2018-10-14"),
+            "start" : "20:20",
+            "away" : "chiefs",
+            "home" : "patriots"
+        },
+        {
+            "date" : ISODate("2018-10-15"),
+            "start" : "20:15",
+            "away" : "49ers",
+            "home" : "packers"
+        }
+    ],
+    "byeteams" : [
+        "lions",
+        "saints"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c515"),
+    "week" : "7",
+    "games" : [
+        {
+            "date" : ISODate("2018-10-18"),
+            "start" : "20:20",
+            "away" : "broncos",
+            "home" : "cardinals"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "13:00",
+            "away" : "titans",
+            "home" : "chargers"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "13:00",
+            "away" : "texans",
+            "home" : "jaguars"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "13:00",
+            "away" : "panthers",
+            "home" : "eagles"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "13:00",
+            "away" : "vikings",
+            "home" : "jets"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "13:00",
+            "away" : "patriots",
+            "home" : "bears"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "13:00",
+            "away" : "bills",
+            "home" : "colts"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "13:00",
+            "away" : "browns",
+            "home" : "bucs"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "13:00",
+            "away" : "lions",
+            "home" : "dolphins"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "16:05",
+            "away" : "saints",
+            "home" : "ravens"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "16:05",
+            "away" : "cowboys",
+            "home" : "redskins"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "16:25",
+            "away" : "rams",
+            "home" : "49ers"
+        },
+        {
+            "date" : ISODate("2018-10-21"),
+            "start" : "20:20",
+            "away" : "bengals",
+            "home" : "chiefs"
+        },
+        {
+            "date" : ISODate("2018-10-22"),
+            "start" : "20:15",
+            "away" : "giants",
+            "home" : "falcons"
+        }
+    ],
+    "byeteams" : [
+        "packers",
+        "raiders",
+        "steelers",
+        "seahawks"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c517"),
+    "week" : "8",
+    "games" : [
+        {
+            "date" : ISODate("2018-10-25"),
+            "start" : "20:20",
+            "away" : "dolphins",
+            "home" : "texans"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "13:00",
+            "away" : "eagles",
+            "home" : "jaguars"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "13:00",
+            "away" : "broncos",
+            "home" : "chiefs"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "13:00",
+            "away" : "browns",
+            "home" : "steelers"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "13:00",
+            "away" : "redskins",
+            "home" : "giants"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "13:00",
+            "away" : "seahawks",
+            "home" : "lions"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "13:00",
+            "away" : "bucs",
+            "home" : "bengals"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "13:00",
+            "away" : "jets",
+            "home" : "bears"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "13:00",
+            "away" : "ravens",
+            "home" : "panthers"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "16:05",
+            "away" : "colts",
+            "home" : "raiders"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "16:05",
+            "away" : "49ers",
+            "home" : "cardinals"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "16:25",
+            "away" : "packers",
+            "home" : "rams"
+        },
+        {
+            "date" : ISODate("2018-10-28"),
+            "start" : "20:20",
+            "away" : "saints",
+            "home" : "vikings"
+        },
+        {
+            "date" : ISODate("2018-10-29"),
+            "start" : "20:15",
+            "away" : "patriots",
+            "home" : "bills"
+        }
+    ],
+    "byeteams" : [
+        "falcons",
+        "cowboys",
+        "chargers",
+        "titans"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c519"),
+    "week" : "9",
+    "games" : [
+        {
+            "date" : ISODate("2018-11-01"),
+            "start" : "20:20",
+            "away" : "raiders",
+            "home" : "49ers"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "13:00",
+            "away" : "bears",
+            "home" : "bills"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "13:00",
+            "away" : "bucs",
+            "home" : "panthers"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "13:00",
+            "away" : "chiefs",
+            "home" : "browns"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "13:00",
+            "away" : "jets",
+            "home" : "dolphins"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "13:00",
+            "away" : "steelers",
+            "home" : "ravens"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "13:00",
+            "away" : "lions",
+            "home" : "vikings"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "13:00",
+            "away" : "falcons",
+            "home" : "redskins"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "16:05",
+            "away" : "texans",
+            "home" : "broncos"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "16:05",
+            "away" : "chargers",
+            "home" : "seahawks"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "16:25",
+            "away" : "rams",
+            "home" : "saints"
+        },
+        {
+            "date" : ISODate("2018-11-04"),
+            "start" : "20:20",
+            "away" : "packers",
+            "home" : "patriots"
+        },
+        {
+            "date" : ISODate("2018-11-05"),
+            "start" : "20:15",
+            "away" : "titans",
+            "home" : "cowboys"
+        }
+    ],
+    "byeteams" : [
+        "cardinals",
+        "bengals",
+        "colts",
+        "jaguars",
+        "giants",
+        "eagles"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c51b"),
+    "week" : "10",
+    "games" : [
+        {
+            "date" : ISODate("2018-11-08"),
+            "start" : "20:20",
+            "away" : "panthers",
+            "home" : "steelers"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "13:00",
+            "away" : "saints",
+            "home" : "bengals"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "13:00",
+            "away" : "falcons",
+            "home" : "browns"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "13:00",
+            "away" : "lions",
+            "home" : "bears"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "13:00",
+            "away" : "cardinals",
+            "home" : "chiefs"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "13:00",
+            "away" : "patriots",
+            "home" : "titans"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "13:00",
+            "away" : "redskins",
+            "home" : "bucs"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "13:00",
+            "away" : "bills",
+            "home" : "jets"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "13:00",
+            "away" : "jaguars",
+            "home" : "colts"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "16:05",
+            "away" : "chargers",
+            "home" : "raiders"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "16:05",
+            "away" : "seahawks",
+            "home" : "rams"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "16:25",
+            "away" : "dolphins",
+            "home" : "packers"
+        },
+        {
+            "date" : ISODate("2018-11-11"),
+            "start" : "20:20",
+            "away" : "cowboys",
+            "home" : "eagles"
+        },
+        {
+            "date" : ISODate("2018-11-12"),
+            "start" : "20:15",
+            "away" : "giants",
+            "home" : "49ers"
+        }
+    ],
+    "byeteams" : [
+        "ravens",
+        "broncos",
+        "texans",
+        "vikings"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c51d"),
+    "week" : "11",
+    "games" : [
+        {
+            "date" : ISODate("2018-11-15"),
+            "start" : "20:20",
+            "away" : "packers",
+            "home" : "seahawks"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "13:00",
+            "away" : "bengals",
+            "home" : "ravens"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "13:00",
+            "away" : "cowboys",
+            "home" : "falcons"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "13:00",
+            "away" : "bucs",
+            "home" : "giants"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "13:00",
+            "away" : "steelers",
+            "home" : "jaguars"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "13:00",
+            "away" : "texans",
+            "home" : "redskins"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "13:00",
+            "away" : "titans",
+            "home" : "colts"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "13:00",
+            "away" : "panthers",
+            "home" : "lions"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "16:05",
+            "away" : "broncos",
+            "home" : "chargers"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "16:05",
+            "away" : "raiders",
+            "home" : "cardinals"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "16:25",
+            "away" : "eagles",
+            "home" : "saints"
+        },
+        {
+            "date" : ISODate("2018-11-18"),
+            "start" : "20:20",
+            "away" : "vikings",
+            "home" : "bears"
+        },
+        {
+            "date" : ISODate("2018-11-19"),
+            "start" : "20:15",
+            "away" : "chiefs",
+            "home" : "rams"
+        }
+    ],
+    "byeteams" : [
+        "bills",
+        "browns",
+        "dolphins",
+        "patriots",
+        "jets",
+        "49ers"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c51f"),
+    "week" : "12",
+    "games" : [
+        {
+            "date" : ISODate("2018-11-22"),
+            "start" : "13:00",
+            "away" : "bears",
+            "home" : "lions"
+        },
+        {
+            "date" : ISODate("2018-11-22"),
+            "start" : "16:05",
+            "away" : "redskins",
+            "home" : "cowboys"
+        },
+        {
+            "date" : ISODate("2018-11-22"),
+            "start" : "20:00",
+            "away" : "falcons",
+            "home" : "saints"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "13:00",
+            "away" : "browns",
+            "home" : "bengals"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "13:00",
+            "away" : "49ers",
+            "home" : "bucs"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "13:00",
+            "away" : "jaguars",
+            "home" : "bills"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "13:00",
+            "away" : "raiders",
+            "home" : "ravens"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "13:00",
+            "away" : "seahawks",
+            "home" : "panthers"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "13:00",
+            "away" : "patriots",
+            "home" : "jets"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "16:05",
+            "away" : "giants",
+            "home" : "eagles"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "16:05",
+            "away" : "cardinals",
+            "home" : "chargers"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "16:25",
+            "away" : "dolphins",
+            "home" : "colts"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "16:25",
+            "away" : "steelers",
+            "home" : "broncos"
+        },
+        {
+            "date" : ISODate("2018-11-25"),
+            "start" : "20:20",
+            "away" : "packers",
+            "home" : "vikings"
+        },
+        {
+            "date" : ISODate("2018-11-26"),
+            "start" : "20:15",
+            "away" : "titans",
+            "home" : "texans"
+        }
+    ],
+    "byeteams" : [
+        "chiefs",
+        "rams"
+    ]
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c521"),
+    "week" : "13",
+    "games" : [
+        {
+            "date" : ISODate("2018-11-29"),
+            "start" : "20:20",
+            "away" : "saints",
+            "home" : "cowboys"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "13:00",
+            "away" : "ravens",
+            "home" : "falcons"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "13:00",
+            "away" : "panthers",
+            "home" : "bucs"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "13:00",
+            "away" : "bears",
+            "home" : "giants"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "13:00",
+            "away" : "bills",
+            "home" : "dolphins"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "13:00",
+            "away" : "colts",
+            "home" : "jaguars"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "13:00",
+            "away" : "browns",
+            "home" : "texans"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "13:00",
+            "away" : "broncos",
+            "home" : "bengals"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "13:00",
+            "away" : "rams",
+            "home" : "lions"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "16:05",
+            "away" : "cardinals",
+            "home" : "packers"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "16:05",
+            "away" : "chiefs",
+            "home" : "raiders"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "16:25",
+            "away" : "jets",
+            "home" : "titans"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "16:25",
+            "away" : "49ers",
+            "home" : "seahawks"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "16:25",
+            "away" : "vikings",
+            "home" : "patriots"
+        },
+        {
+            "date" : ISODate("2018-12-02"),
+            "start" : "20:20",
+            "away" : "chargers",
+            "home" : "steelers"
+        },
+        {
+            "date" : ISODate("2018-12-03"),
+            "start" : "20:15",
+            "away" : "redskins",
+            "home" : "eagles"
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c523"),
+    "week" : "14",
+    "games" : [
+        {
+            "date" : ISODate("2018-12-06"),
+            "start" : "20:20",
+            "away" : "jaguars",
+            "home" : "titans"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "13:00",
+            "away" : "jets",
+            "home" : "bills"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "13:00",
+            "away" : "giants",
+            "home" : "redskins"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "13:00",
+            "away" : "saints",
+            "home" : "bucs"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "13:00",
+            "away" : "patriots",
+            "home" : "dolphins"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "13:00",
+            "away" : "ravens",
+            "home" : "chiefs"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "13:00",
+            "away" : "colts",
+            "home" : "texans"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "13:00",
+            "away" : "falcons",
+            "home" : "packers"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "13:00",
+            "away" : "panthers",
+            "home" : "browns"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "16:05",
+            "away" : "broncos",
+            "home" : "49ers"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "16:05",
+            "away" : "bengals",
+            "home" : "chargers"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "16:25",
+            "away" : "lions",
+            "home" : "cardinals"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "16:25",
+            "away" : "steelers",
+            "home" : "raiders"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "16:25",
+            "away" : "eagles",
+            "home" : "cowboys"
+        },
+        {
+            "date" : ISODate("2018-12-09"),
+            "start" : "20:20",
+            "away" : "rams",
+            "home" : "bears"
+        },
+        {
+            "date" : ISODate("2018-12-10"),
+            "start" : "20:15",
+            "away" : "vikings",
+            "home" : "seahawks"
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c525"),
+    "week" : "15",
+    "games" : [
+        {
+            "date" : ISODate("2018-12-13"),
+            "start" : "20:20",
+            "away" : "chargers",
+            "home" : "chiefs"
+        },
+        {
+            "date" : ISODate("2018-12-15"),
+            "start" : "16:30",
+            "away" : "texans",
+            "home" : "jets"
+        },
+        {
+            "date" : ISODate("2018-12-15"),
+            "start" : "18:20",
+            "away" : "browns",
+            "home" : "broncos"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "packers",
+            "home" : "bears"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "lions",
+            "home" : "bills"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "bucs",
+            "home" : "ravens"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "cardinals",
+            "home" : "falcons"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "raiders",
+            "home" : "bengals"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "titans",
+            "home" : "giants"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "dolphins",
+            "home" : "vikings"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "redskins",
+            "home" : "jaguars"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "13:00",
+            "away" : "cowboys",
+            "home" : "colts"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "16:05",
+            "away" : "seahawks",
+            "home" : "49ers"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "16:25",
+            "away" : "patriots",
+            "home" : "steelers"
+        },
+        {
+            "date" : ISODate("2018-12-16"),
+            "start" : "20:20",
+            "away" : "eagles",
+            "home" : "rams"
+        },
+        {
+            "date" : ISODate("2018-12-17"),
+            "start" : "20:15",
+            "away" : "saints",
+            "home" : "panthers"
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c527"),
+    "week" : "16",
+    "games" : [
+        {
+            "date" : ISODate("2018-12-22"),
+            "start" : "16:30",
+            "away" : "redskins",
+            "home" : "titans"
+        },
+        {
+            "date" : ISODate("2018-12-22"),
+            "start" : "20:20",
+            "away" : "ravens",
+            "home" : "chargers"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "bengals",
+            "home" : "browns"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "bucs",
+            "home" : "cowboys"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "vikings",
+            "home" : "lions"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "bills",
+            "home" : "patriots"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "packers",
+            "home" : "jets"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "texans",
+            "home" : "eagles"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "falcons",
+            "home" : "panthers"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "giants",
+            "home" : "colts"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "13:00",
+            "away" : "jaguars",
+            "home" : "dolphins"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "16:05",
+            "away" : "rams",
+            "home" : "cardinals"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "16:05",
+            "away" : "bears",
+            "home" : "49ers"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "16:25",
+            "away" : "steelers",
+            "home" : "saints"
+        },
+        {
+            "date" : ISODate("2018-12-23"),
+            "start" : "20:20",
+            "away" : "chiefs",
+            "home" : "seahawks"
+        },
+        {
+            "date" : ISODate("2018-12-24"),
+            "start" : "20:15",
+            "away" : "broncos",
+            "home" : "raiders"
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c529"),
+    "week" : "17",
+    "games" : [
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "20:20",
+            "away" : "browns",
+            "home" : "ravens"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "16:30",
+            "away" : "dolphins",
+            "home" : "bills"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "18:20",
+            "away" : "eagles",
+            "home" : "redskins"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "18:20",
+            "away" : "colts",
+            "home" : "titans"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "lions",
+            "home" : "packers"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "jaguars",
+            "home" : "texans"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "raiders",
+            "home" : "chiefs"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "bears",
+            "home" : "vikings"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "jets",
+            "home" : "patriots"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "panthers",
+            "home" : "saints"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "cowboys",
+            "home" : "giants"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "bengals",
+            "home" : "steelers"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "falcons",
+            "home" : "bucs"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "49ers",
+            "home" : "rams"
+        },
+        {
+            "date" : ISODate("2018-12-30"),
+            "start" : "13:00",
+            "away" : "cardinals",
+            "home" : "seahawks"
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c52b"),
+    "week" : "WC",
+    "games" : [
+        {
+            "date" : ISODate("2019-01-05"),
+            "start" : "",
+            "away" : "",
+            "home" : ""
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c52d"),
+    "week" : "DIV",
+    "games" : [
+        {
+            "date" : ISODate("2019-01-12"),
+            "start" : "",
+            "away" : "",
+            "home" : ""
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c52f"),
+    "week" : "C",
+    "games" : [
+        {
+            "date" : ISODate("2019-01-20"),
+            "start" : "",
+            "away" : "",
+            "home" : ""
+        }
+    ],
+    "byeteams" : []
+}
+
+{
+    "_id" : ObjectId("5c27b13d623c47741703c531"),
+    "week" : "SB",
+    "games" : [
+        {
+            "date" : ISODate("2019-02-03"),
+            "start" : "",
+            "away" : "",
+            "home" : ""
+        }
+    ],
+    "byeteams" : []
+}

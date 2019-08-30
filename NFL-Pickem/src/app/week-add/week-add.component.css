@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+.flex-weeks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.flex-games {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  justify-content: center;
+}
+
+.weeks {
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 0.5em;
+}
+
+.weekfocused {
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 0.5em;
+  background: #3399ff;
+  color: white;
+}
+
+.weekgames {
+  padding: 0.3em;
+}
+
+td {
+  text-align: center;
+}

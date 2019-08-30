@@ -1,0 +1,58 @@
+.flex-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.flex-row {
+  flex: 0 0 4em;
+  font: times;
+  font-size: 2em;
+  font-weight: bold;
+  align-content: center;
+}
+
+.body {
+  margin-left: 3.5em;
+}
+
+.col-one {
+  height: 2em;
+  width: 50%;
+  border-collapse: collapse;
+  /*background-color: rebeccapurple; */
+  float: left;
+  text-align: center;
+}
+
+.col-two {
+  height: 2em;
+  width: 50%;
+  border-collapse: collapse;
+  /*background-color: royalblue;*/
+  float: left;
+  text-align: center;
+}
+
+.sub-head-title {
+  font: times;
+  font-size: 0.4em;
+}
+
+.sub-head-value {
+  font: times;
+  font-size: 0.5em;
+  margin-bottom: 1em;
+}
+
+.adduser {
+  border: 2px solid lightgray;
+}
+
+.text {
+  text-align: center;
+  color: lightgray;
+  font-size: 1em;
+}

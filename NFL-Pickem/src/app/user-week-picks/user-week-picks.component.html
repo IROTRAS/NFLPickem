@@ -1,0 +1,52 @@
+<header>
+  <body class="main">
+    <div class="col-one">
+        <button mat-raised-button (click)="back()">BACK</button>
+      </div>
+    <div class="col-two">
+      <h1 class="picks-main">{{ username | uppercase }}</h1>
+      <div class="picks-main">
+        WEEK <br />
+        {{ selectedweek }}
+      </div>
+      <div class="picks-main">
+        <div class="flex-body">
+          <div
+            class="flex-col"
+            *ngFor="let game of scheduleweek; let i = index"
+          >
+            <div class="flex-row">
+              <div class="away-col">
+                <img
+                  src="./assets/images/{{game.away}}.png"
+                  alt="{{game.away}}"
+                  (click)="picked(i, game.away)"
+                  [ngClass]="{
+                    'away-chosen': userWeek[0].userweek.picks[i] === game.away,
+                    'away-notchosen': userWeek[0].userweek.picks[i] !== game.away
+                  }"
+                />
+              </div>
+              <div class="home-col">
+                <img
+                  src="./assets/images/{{game.home}}.png"
+                  alt="{{game.home}}"
+                  (click)="picked(i, game.home)"
+                  [ngClass]="{
+                    'home-chosen': userWeek[0].userweek.picks[i] === game.home,
+                    'home-notchosen': userWeek[0].userweek.picks[i] !== game.home
+                  }"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-three">
+      <button mat-raised-button (click)="saveUserWeek()">SAVE</button>
+    </div>
+  </body>
+</header>
+
+<content> </content>

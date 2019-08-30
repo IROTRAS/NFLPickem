@@ -1,0 +1,15 @@
+/* week-selection's private CSS styles */
+
+.h1 {
+  margin: auto;
+  /* width: 70%; */
+}
+
+.week {
+  margin: auto;
+  /* width: 50%; */
+}
+
+.select {
+  font-size: 1.8em;
+}

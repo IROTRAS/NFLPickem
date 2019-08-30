@@ -1,0 +1,27 @@
+####################
+### server       ###
+####################
+
+# Create image based on official Node 8 image from dockerhub
+FROM node:8
+
+# Create new directory to place app and public for the client dist
+# RUN mkdir -p /usr/src/app
+
+# Change directory so our commands run inside the newly created directory
+WORKDIR /usr/src/app
+
+# Copy dependecy definitions
+COPY package*.json ./
+
+# Install dependecies
+RUN npm install
+
+# Copy all the other files in directory needed to run the app
+COPY . /usr/src/app
+
+# Expose the port for app
+EXPOSE 3200
+
+# Use the Start script to serve the app
+CMD ["npm", "start"]

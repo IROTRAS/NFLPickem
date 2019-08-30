@@ -1,0 +1,12 @@
+<div class="main-week-select">
+  <h1 class="h1">WEEK
+  </h1>
+  <div class="week">
+    <select class="select"
+      (change)="weekSelected()"
+      [(ngModel)]="selectedweek">
+        <option *ngFor="let week of weeks" [ngValue]="week" >{{week}}</option>
+    </select>
+  </div>
+</div>
+<!--[value]="weeknumber"!-->

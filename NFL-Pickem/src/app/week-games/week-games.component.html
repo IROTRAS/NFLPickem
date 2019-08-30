@@ -1,0 +1,25 @@
+  <!--mat-grid-list class="weekgames" cols="1" rowHeight="3em">
+    <mat-grid-tile *ngFor="let game of weekgames1">
+      <img src="./assets/images/{{game.away}}.png" alt="" height="49px" width="63px" >
+      <img src="./assets/images/{{game.home}}.png" alt="" height="49px" width="63px" style="transform: scaleX(-1)" >
+    </mat-grid-tile>
+  </mat-grid-list!-->
+
+  <!--mat-list class="weekgames">
+      <mat-list-item *ngFor="let game of weekgames1">
+        <img src="./assets/images/{{game.away}}.png" alt="" height="49px" width="63px" >
+        <img src="./assets/images/{{game.home}}.png" alt="" height="49px" width="63px" style="transform: scaleX(-1)" >
+      </mat-list-item>
+    </mat-list!-->
+<div class="app-table">
+  <table>
+    <tr>
+      <th>AWAY</th>
+      <th>HOME</th>
+    </tr>
+    <tr *ngFor="let game of games">
+      <td><img src="./assets/images/{{game.away}}.png" alt="awayteam" style="height:49px;width:63px" ></td>
+      <td><img src="./assets/images/{{game.home}}.png" alt="hometeam" style="height:49px;width:63px;transform:scaleX(-1)" ></td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+<form [formGroup]="commishLoginForm" (submit)="login()">
+  <h1 mat-dialog-title>Commissioner Login</h1>
+  <mat-dialog-content>
+    <mat-form-field>
+      <input matInput formControlName="username" placeholder="Username" />
+      <mat-error>Invalid username</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="password" placeholder="Password" />
+      <mat-error>Invalid password</mat-error>
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button
+      mat-button
+      type="submit"
+      [disabled]="
+        commishLoginForm.invalid ||
+        commishLoginForm.pristine ||
+        commishLoginForm.errors
+      "
+    >
+      Login
+    </button>
+    <button mat-button type="close" mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</form>
