@@ -10,7 +10,7 @@ services:
   #     - ./NFL-Pickem:/app # allows changes to client app to be reflected in the container
 
   server: # name of the server service
-    build: NFL-Pickem-server
+    build: .
     ports:
       - "3200:3200" # specify port forwarding
     links:
