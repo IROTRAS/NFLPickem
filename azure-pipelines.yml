@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: "ubuntu-latest"
 variables:
-  imageName: "nflpickem"
+  imageName: "kraqrepo"
 
 steps:
   - task: Docker@2
