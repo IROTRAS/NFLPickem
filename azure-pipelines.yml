@@ -18,14 +18,8 @@ steps:
       repository: $(imageName)
       command: build
       Dockerfile: Dockerfile
-
   - task: Docker@2
-    displayName: Push image
     inputs:
-      containerRegistry: |
-        dockerhub
-      repository: $(imageName)
-      command: push
-      tags: |
-        $(imageName)
-        latest
+      containerRegistry: 'dockerhub'
+      repository: 'kraquen/kraqrepo'
+      command: 'push'
