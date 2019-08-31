@@ -26,6 +26,7 @@ import { map } from 'rxjs/operators';
 export class AddUserComponent implements OnInit {
   adduserForm: FormGroup;
   hide = true;
+  confhide = true;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -34,11 +35,14 @@ export class AddUserComponent implements OnInit {
     private userService: UserService
   ) {}
   ngOnInit() {
-    this.adduserForm = this.formBuilder.group({
-      username: ['', Validators.required, this.validateUsername.bind(this)],
-      password: ['', Validators.required, this.validateUsername.bind(this)],
-      confpassword: ['', Validators.required, this.validateUsername.bind(this)]
-    });
+    this.adduserForm = this.formBuilder.group(
+      {
+        username: ['', Validators.required, this.validateUsername.bind(this)],
+        password: ['', Validators.required],
+        confpassword: ['', Validators.required]
+      },
+      { validator: this.passwordMatchValidator('password', 'confpassword') }
+    );
   }
 
   validateUsername(control: AbstractControl): Observable<any> {
@@ -61,6 +65,30 @@ export class AddUserComponent implements OnInit {
       },
       err => {}
     );
+  }
+
+  // onIconClick(event) {
+  //   event.stopPropagation();
+  //   this.hide = !this.hide;
+  // }
+
+  passwordMatchValidator(controlName: string, matchingControlName: string) {
+    return (formGroup: FormGroup) => {
+      const control = formGroup.controls[controlName];
+      const matchingControl = formGroup.controls[matchingControlName];
+
+      if (matchingControl.errors && !matchingControl.errors.mustMatch) {
+        // return if another validator has already found an error on the matchingControl
+        return;
+      }
+
+      // set error on matchingControl if validation fails
+      if (control.value !== matchingControl.value) {
+        matchingControl.setErrors({ mustMatch: true });
+      } else {
+        matchingControl.setErrors(null);
+      }
+    };
   }
 
   close() {

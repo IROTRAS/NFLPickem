@@ -13,11 +13,12 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'picks/:username/:week', component: UserWeekPicksComponent },
   { path: 'weeks', component: WeekAddComponent },
-  { path: 'results', component: ResultsComponent }
+  { path: 'results', component: ResultsComponent },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

@@ -168,7 +168,7 @@ apiRouter.route("/user/delete").post((req, res) => {
     var username = req.body.username;
     username = username.toLowerCase();
   }
-  user.deleteOne(req.body.username, (err, result) => {
+  user.deleteOne( {username: username }, (err, result) => {
     /* If we encounter an error log this to the console*/
     if (err) {
       console.dir(err);

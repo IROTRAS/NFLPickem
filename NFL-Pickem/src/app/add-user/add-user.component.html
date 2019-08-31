@@ -13,6 +13,7 @@
       <mat-form-field>
         <input
           matInput
+          required
           formControlName="password"
           placeholder="Enter password"
           [type]="hide ? 'password' : 'text'"
@@ -26,25 +27,26 @@
         >
           <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
         </button>
-        <mat-error>Invalid password</mat-error>
+        <mat-error>Password is required</mat-error>
       </mat-form-field>
       <mat-form-field>
         <input
           matInput
+          required
           formControlName="confpassword"
           placeholder="Confirm password"
-          [type]="hide ? 'password' : 'text'"
+          [type]="confhide ? 'password' : 'text'"
         />
         <button
           mat-icon-button
           matSuffix
-          (click)="hide = !hide"
-          [attr.aria-label]="'Hide password'"
-          [attr.aria-pressed]="hide"
+          (click)="confhide = !confhide"
+          [attr.aria-label]="'Hide confpassword'"
+          [attr.aria-pressed]="confhide"
         >
-          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+          <mat-icon>{{ confhide ? 'visibility_off' : 'visibility' }}</mat-icon>
         </button>
-        <mat-error>Invalid password</mat-error>
+        <mat-error>Passwords do no match</mat-error>
       </mat-form-field>
     </div>
   </mat-dialog-content>
@@ -52,7 +54,9 @@
     <button
       mat-button
       type="submit"
-      [disabled]="adduserForm.invalid || adduserForm.pristine"
+      [disabled]="
+        adduserForm.invalid || adduserForm.pristine || adduserForm.errors
+      "
     >
       Save
     </button>
