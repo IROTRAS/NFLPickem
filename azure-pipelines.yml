@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: "ubuntu-latest"
 variables:
-  imageName: "NFLPickem"
+  imageName: "nflpickem"
 
 steps:
   - task: Docker@2
@@ -27,5 +27,5 @@ steps:
       repository: $(imageName)
       command: push
       tags: |
-        test1
-        test2
+        $(imageName)
+        latest
