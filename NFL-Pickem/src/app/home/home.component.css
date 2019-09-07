@@ -11,7 +11,7 @@
 
 .col-one {
   height: 100%;
-  width: 10%;
+  width: 20%;
   /* border-collapse: collapse; */
   /*background-color: rebeccapurple; */
   float: left;
@@ -21,7 +21,7 @@
 
 .col-two {
   height: 100%;
-  width: 90%;
+  width: 80%;
   border-collapse: collapse;
   /*background-color: royalblue;*/
   float: right;
