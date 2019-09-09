@@ -90,24 +90,17 @@ export class UsersComponent implements OnInit, OnDestroy {
   }
 
   private calculateTotalScore(allUserWeeks: any) {
-    console.log('starting calculate total score ...');
     this.userTotalScores = allUserWeeks.map((users: any) => {
       const userWeekScores: any = users.userweeks.map((userweek: any) => {
         return userweek.score;
       });
-      console.log('userweekScores');
-      console.log(userWeekScores);
       const userTotalScore = userWeekScores.reduce(
         (cum: number, curr: number) => {
           return curr + cum;
         }
       );
-      console.log('c');
-      console.log(userTotalScore);
       return userTotalScore;
     });
-    console.log('user week scores');
-    console.log(this.userTotalScores);
   }
 
   ngOnInit() {}

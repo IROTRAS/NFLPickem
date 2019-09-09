@@ -4,6 +4,7 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { WeekDataService } from '../week-data.service';
 import { UserService } from '../user.service';
 import { $ } from 'protractor';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-user-week-picks',
@@ -14,6 +15,7 @@ export class UserWeekPicksComponent implements OnInit, OnDestroy {
   username: string;
   selectedweek: string; // the specific week
   scheduleweek: any; // schedule week object passed in
+  scheduleGamesTimes: any = [];
   // user week object passed in or not if first time for this user/week
   userWeek: any = []; /*{
     username: 'initial',
@@ -29,6 +31,7 @@ export class UserWeekPicksComponent implements OnInit, OnDestroy {
     private activatedroute: ActivatedRoute,
     private weekdataService: WeekDataService,
     private userService: UserService,
+    private authService: AuthService,
     private router: Router
   ) {
     this.activatedroute.params.subscribe(params => {
@@ -42,6 +45,9 @@ export class UserWeekPicksComponent implements OnInit, OnDestroy {
       .subscribe((games: any) => {
         this.scheduleweek = games;
         console.log(this.scheduleweek);
+        this.scheduleGamesTimes = this.scheduleweek.map(game => {
+          return this.getAsDate(game.date, game.start);
+        });
       });
 
     this.userService.getSingleUserWeek(this.username).subscribe(data => {
@@ -73,12 +79,22 @@ export class UserWeekPicksComponent implements OnInit, OnDestroy {
     // this.userWeek.userweek.picks.length = this.scheduleweek.length;
     const weekLength = this.scheduleweek.length;
     this.userWeek.userweek.picks(weekLength).fill('');
-    console.log(this.userWeek);
   }
 
   picked(index: number, team: string) {
-    // console.log('before  ' + this.userWeek);
-    this.userWeek[0].userweek.picks = this.replacePick(this.userWeek[0].userweek.picks, index, team);
+    const token = this.authService.getIdToken();
+    const user = this.authService.getUserFromToken(token);
+    const rightNow = new Date();
+    if (
+      this.userWeek[0].username === user.username &&
+      rightNow <= this.scheduleGamesTimes[index]
+    ) {
+      this.userWeek[0].userweek.picks = this.replacePick(
+        this.userWeek[0].userweek.picks,
+        index,
+        team
+      );
+    }
     // console.log(this.userWeek[0].userweek.picks[index]);
     // console.log('after  ' + this.userWeek);
   }
@@ -96,7 +112,7 @@ export class UserWeekPicksComponent implements OnInit, OnDestroy {
       picks: this.userWeek[0].userweek.picks
     };
     console.log(userWeekSave);
-    this.userService.updateUser(userWeekSave).subscribe( response => {
+    this.userService.updateUser(userWeekSave).subscribe(response => {
       console.log(response);
       console.log('success');
     });
@@ -107,6 +123,27 @@ export class UserWeekPicksComponent implements OnInit, OnDestroy {
     this.router.navigate(['home']);
   }
 
+  getAsDate(day, time) {
+    const hours = Number(time.match(/^(\d+)/)[1]);
+    const minutes = Number(time.match(/:(\d+)/)[1]);
+    const AMPM = time.match(/\s(.*)$/)[1];
+    // if (AMPM === "pm" && hours<12)
+    //   {hours = hours+12};
+    // if(AMPM == "am" && hours==12) hours = hours-12;
+    let sHours = hours.toString();
+    let sMinutes = minutes.toString();
+    if (hours < 10) {
+      sHours = '0' + sHours;
+    }
+    if (minutes < 10) {
+      sMinutes = '0' + sMinutes;
+    }
+    time = sHours + ':' + sMinutes + ':00';
+    const d = new Date(day);
+    const n = d.toISOString().substring(0, 10);
+    const newDate = new Date(n + 'T' + time);
+    return newDate;
+  }
 
   ngOnDestroy() {
     this.scheduleWeekSub.unsubscribe();

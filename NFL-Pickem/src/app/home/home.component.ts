@@ -6,11 +6,13 @@ import { WeekAddComponent } from '../week-add/week-add.component';
 import { Subscription } from 'rxjs';
 import { UserService } from '../user.service';
 import { WeekDataService } from '../week-data.service';
+import { AuthService } from '../auth.service';
 import { FormGroup, FormBuilder, FormsModule } from '@angular/forms';
 
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material';
 import { CommishLoginComponent } from '../commish-login/commish-login.component';
 import { AddUserComponent } from '../add-user/add-user.component';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-home',
@@ -23,11 +25,13 @@ export class HomeComponent implements OnInit, OnDestroy {
   removeUserDialogRef: MatDialogRef<RemoveUserComponent>;
   commishLoginDialogRef: MatDialogRef<CommishLoginComponent>;
   addUserDialogRef: MatDialogRef<AddUserComponent>;
+  loginDialogRef: MatDialogRef<LoginComponent>;
   subscriptions: Subscription = new Subscription();
 
   constructor(
     private userService: UserService,
     private weekDataService: WeekDataService,
+    private authService: AuthService,
     public dialog: MatDialog,
     private router: Router
   ) {
@@ -46,6 +50,19 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   updateResults() {
     this.router.navigate(['results']);
+  }
+
+  loginDialog() {
+    this.loginDialogRef = this.dialog.open(LoginComponent, {
+      hasBackdrop: true,
+      autoFocus: true,
+      disableClose: true,
+      data: {}
+    });
+  }
+
+  logout() {
+    this.authService.logout();
   }
 
   addUserDialog() {
@@ -74,7 +91,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       data: {}
     });
   }
-
 
   setupSeason() {
     this.weekDataService.setupSeason().subscribe(

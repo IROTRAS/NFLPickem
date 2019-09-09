@@ -7,7 +7,10 @@ import mongoose from "mongoose";
 import user from "./models/user";
 import schedule from "./models/schedule";
 
+import * as RSA_PRIVATE_KEY from "./config";
 import * as constants from "./template-weeks";
+import * as jwt from "jsonwebtoken";
+import * as fs from "fs";
 
 const path = require("path");
 const port = process.env.PORT || 3200;
@@ -15,6 +18,8 @@ const app = express();
 const apiRouter = express.Router();
 const dbHost = "mongodb://localhost:27017/NFL-Pickem";
 const dbHostDocker = "mongodb://database/NFL-Pickem"; // is hosting through docker
+
+// const RSA_PRIVATE_KEY = fs.readFileSync("./config.secret");
 
 /* Get Mongoose to use the global promise library */
 mongoose.Promise = global.Promise;
@@ -58,6 +63,7 @@ apiRouter.route("/user").get((req, res) => {
     res.json(users);
   });
 });
+
 /////////////////////////////////////////
 /* GET for a single user record*/
 /////////////////////////////////////////
@@ -168,7 +174,7 @@ apiRouter.route("/user/delete").post((req, res) => {
     var username = req.body.username;
     username = username.toLowerCase();
   }
-  user.deleteOne( {username: username }, (err, result) => {
+  user.deleteOne({ username: username }, (err, result) => {
     /* If we encounter an error log this to the console*/
     if (err) {
       console.dir(err);
@@ -209,6 +215,36 @@ apiRouter.route("/user/update").post((req, res) => {
       }
     }
   );
+});
+
+/////////////////////////////////////////
+/* POST to authenticate user*/
+/////////////////////////////////////////
+apiRouter.route("/user/authenticate").post((req, res) => {
+  /* Use the gallery model and access Mongoose's API to
+      retrieve ALL MongoDB documents whose displayed field
+      has a value of true */
+  console.log("Authenticate User login");
+  user.find({ username: req.body.username }, (err, users) => {
+    /* If we encounter an error log this to the console */
+    if (err) {
+      console.dir(err);
+    }
+    // Return if password is wrong
+    if (req.body.password !== users[0].password) {
+      // send status 401 Unauthorized
+      res.sendStatus(401);
+    } else {
+      // If credentials are correct, return the user object
+      const jwtBearerToken = jwt.sign(
+        { username: req.body.username },
+        RSA_PRIVATE_KEY.secret
+      );
+      console.log(jwtBearerToken);
+      // set it in the HTTP Response body
+      res.status(200).send({ token: jwtBearerToken });
+    }
+  });
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

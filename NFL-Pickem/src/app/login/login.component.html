@@ -1,0 +1,46 @@
+<form [formGroup]="loginForm" (submit)="login()">
+  <h1 mat-dialog-title>Login</h1>
+  <mat-dialog-content>
+    <div class="dialogcontent">
+      <mat-form-field>
+        <input
+          matInput
+          formControlName="username"
+          placeholder="Enter username"
+        />
+        <mat-error>Invalid username</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          required
+          formControlName="password"
+          placeholder="Enter password"
+          [type]="hide ? 'password' : 'text'"
+        />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <mat-error>Password is required</mat-error>
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button
+      mat-button
+      type="submit"
+      [disabled]="loginForm.invalid || loginForm.pristine || loginForm.errors"
+    >
+      Login
+    </button>
+    <button mat-button type="close" mat-dialog-close (click)="close()">
+      Cancel
+    </button>
+  </mat-dialog-actions>
+</form>

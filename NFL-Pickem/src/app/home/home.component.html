@@ -5,17 +5,37 @@
     </button>
     <h1>NFL Pickem</h1>
     <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="loginDialog()">
+        Login
+      </button>
+      <button mat-menu-item (click)="logout()">
+        Logout
+      </button>
       <button mat-menu-item (click)="addUserDialog()">
         Add User
       </button>
       <button mat-menu-item (click)="commishLoginDialog()">
         Commmissioner Login
       </button>
-      <button *ngIf="(commishLoggedIn)" mat-menu-item (click)="updateSeason()">Update Season</button>
-      <button *ngIf="(commishLoggedIn)" mat-menu-item (click)="updateResults()">Update Results</button>
-      <button *ngIf="(commishLoggedIn)" mat-menu-item (click)="removeUserDialog()">Remove User</button>
-      <button *ngIf="(commishLoggedIn)" mat-menu-item (click)="setupSeason()">Setup Season</button>
-      <button *ngIf="(commishLoggedIn)" mat-menu-item (click)="deleteSeason()">Delete Season</button>
+      <button *ngIf="commishLoggedIn" mat-menu-item (click)="updateSeason()">
+        Update Season
+      </button>
+      <button *ngIf="commishLoggedIn" mat-menu-item (click)="updateResults()">
+        Update Results
+      </button>
+      <button
+        *ngIf="commishLoggedIn"
+        mat-menu-item
+        (click)="removeUserDialog()"
+      >
+        Remove User
+      </button>
+      <button *ngIf="commishLoggedIn" mat-menu-item (click)="setupSeason()">
+        Setup Season
+      </button>
+      <button *ngIf="commishLoggedIn" mat-menu-item (click)="deleteSeason()">
+        Delete Season
+      </button>
     </mat-menu>
   </mat-toolbar>
 </header>

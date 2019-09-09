@@ -47,6 +47,8 @@ import { SeasonsComponent } from './seasons/seasons.component';
 import { GameAddComponent } from './game-add/game-add.component';
 import { CommishLoginComponent } from './commish-login/commish-login.component';
 import { WeekAddFileComponent } from './week-add-file/week-add-file.component';
+import { LoginComponent } from './login/login.component';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -65,7 +67,8 @@ import { WeekAddFileComponent } from './week-add-file/week-add-file.component';
     SeasonsComponent,
     GameAddComponent,
     CommishLoginComponent,
-    WeekAddFileComponent
+    WeekAddFileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -120,6 +123,7 @@ import { WeekAddFileComponent } from './week-add-file/week-add-file.component';
     AddUserComponent,
     GameAddComponent,
     ByeAddComponent,
+    LoginComponent,
     RemoveUserComponent,
     CommishLoginComponent,
     WeekAddFileComponent
@@ -127,6 +131,7 @@ import { WeekAddFileComponent } from './week-add-file/week-add-file.component';
   providers: [
     WeekDataService,
     UserService,
+    AuthService,
     MatDialogModule,
     MatDialog,
     MatDatepickerModule

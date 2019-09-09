@@ -29,8 +29,8 @@ export class UserService {
     return this.http.get(this._HOST + '/user');
   }
 
-  getSingleUserWeek(username: string): Observable<any> {
-    return this.http.get(this._HOST + '/user/' + username);
+  getSingleUserWeek(user: string): Observable<any> {
+    return this.http.get(this._HOST + '/user/' + user);
   }
 
   getSingleWeekPicks(): Observable<any> {
@@ -55,8 +55,8 @@ export class UserService {
     });
   }
 
-  addUser(username: any): Observable<any> {
-    return this.http.post(this._HOST + '/user', username);
+  addUser(user: any): Observable<any> {
+    return this.http.post(this._HOST + '/user', user);
   }
 
   removeUser(username: any): Observable<any> {
